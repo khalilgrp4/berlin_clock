@@ -2,6 +2,7 @@
   "name": "berlin_clock",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "jasmine"
@@ -11,5 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "jasmine": "^5.4.0"
+  },
+  "dependencies": {
+    "berlin_clock" : "file:"
   }
 }
