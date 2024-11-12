@@ -15,7 +15,11 @@ export class Main {
         if(minutes === 4){
             return "YYYY";
         }
+        if(minutes === 5){
+            return "OOOO"
+        }
 
     
     }
+
 }
