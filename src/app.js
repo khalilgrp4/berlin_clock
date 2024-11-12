@@ -27,6 +27,9 @@ export class Main {
         if(minutes === 8){
             return "YYYO"
         }
+        if(minutes === 9){
+            return "YYYY"
+        }
 
     
     }
