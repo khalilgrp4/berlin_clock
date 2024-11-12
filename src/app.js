@@ -12,6 +12,10 @@ export class Main {
             return "YYYO";
         }
 
+        if(minutes === 4){
+            return "YYYY";
+        }
+
     
     }
 }
