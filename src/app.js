@@ -30,6 +30,9 @@ export class Main {
         if(minutes === 9){
             return "YYYY"
         }
+        if(minutes === 10){
+            return "OOOO"
+        }
 
     
     }
