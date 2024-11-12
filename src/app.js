@@ -1,5 +1,7 @@
 export class Main {
-    berlinClock(hour){
-        //
+    ClockSingleMinute(minutes){
+        if(minutes%10===1){
+            return 'YOOO'
+        }
     }
 }
