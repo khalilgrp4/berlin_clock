@@ -23,19 +23,22 @@ export class Main {
     }
     Clock5Minutes(minutes){
         if(minutes === 5){
-           return "YOOOOOOOOOOO"
+           return "YOOOOOOOOOO"
         }
         if(minutes === 10){
-            return "YYOOOOOOOOOO"
+            return "YYOOOOOOOOO"
          }
          if(minutes === 15){
-            return "YYROOOOOOOOO"
+            return "YYROOOOOOOO"
          }
          if(minutes === 20){
-            return "YYRYOOOOOOOO"
+            return "YYRYOOOOOOO"
          }
          if(minutes === 25){
-            return "YYRYYOOOOOOO"
+            return "YYRYYOOOOOO"
+         }
+         if(minutes === 30){
+            return "YYRYYYOOOOO"
          }
     }
 

@@ -65,35 +65,41 @@ describe("A suite of test for the berlinClock function of the main class", funct
 
         expect(result).toBe("OOOO");
     });
-    it("Clock5Minute should return YOOOOOOOOOOO when given 5", function() {
+    it("Clock5Minute should return YOOOOOOOOOO when given 5", function() {
         
         let result = main.Clock5Minutes(5);
 
-        expect(result).toBe("YOOOOOOOOOOO");
+        expect(result).toBe("YOOOOOOOOOO");
     });
-    it("Clock5Minute should return YYOOOOOOOOOO when given 10", function() {
+    it("Clock5Minute should return YYOOOOOOOOO when given 10", function() {
         
         let result = main.Clock5Minutes(10);
 
-        expect(result).toBe("YYOOOOOOOOOO");
+        expect(result).toBe("YYOOOOOOOOO");
     });
-    it("Clock5Minute should return YYOOOOOOOOOO when given 15", function() {
+    it("Clock5Minute should return YYROOOOOOOO when given 15", function() {
         
         let result = main.Clock5Minutes(15);
 
-        expect(result).toBe("YYROOOOOOOOO");
+        expect(result).toBe("YYROOOOOOOO");
     });
-    it("Clock5Minute should return YYOOOOOOOOOO when given 20", function() {
+    it("Clock5Minute should return YYRYOOOOOOO when given 20", function() {
         
         let result = main.Clock5Minutes(20);
 
-        expect(result).toBe("YYRYOOOOOOOO");
+        expect(result).toBe("YYRYOOOOOOO");
     });
-    it("Clock5Minute should return YYOOOOOOOOOO when given 25", function() {
+    it("Clock5Minute should return YYRYYOOOOOO when given 25", function() {
         
         let result = main.Clock5Minutes(25);
 
-        expect(result).toBe("YYRYYOOOOOOO");
+        expect(result).toBe("YYRYYOOOOOO");
+    });
+    it("Clock5Minute should return YYRYYYOOOOO when given 30", function() {
+        
+        let result = main.Clock5Minutes(30);
+
+        expect(result).toBe("YYRYYYOOOOO");
     });
 
 
