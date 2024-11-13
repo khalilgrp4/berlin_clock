@@ -70,6 +70,9 @@ export class Main {
         if(hour === 3){
             return "RRRO";
         }
+        if(hour === 4){
+            return "RRRR";
+        }
     }
 
 }
