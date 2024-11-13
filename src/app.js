@@ -70,14 +70,11 @@ export class Main {
         if(lastDigitHourFinishWith3or8(hour)){
             return "RRRO";
         }
-        if(hour === 4){
+        if(lastDigitHourFinishWith4or9(hour)){
             return "RRRR";
         }
         if(hour === 5){
             return "OOOO";
-        }
-        if(hour === 9){
-            return "RRRR";
         }
         if(hour === 10){
             return "OOOO";
@@ -127,4 +124,9 @@ function lastDigitHourFinishWith2or7(hour) {
 function lastDigitHourFinishWith3or8(hour) {
     let lastDigit = hour % 10;
     return lastDigit === 3 || lastDigit === 8;
+}
+
+function lastDigitHourFinishWith4or9(hour) {
+    let lastDigit = hour % 10;
+    return lastDigit === 4 || lastDigit === 9;
 }
