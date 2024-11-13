@@ -31,6 +31,9 @@ export class Main {
          if(minutes === 15){
             return "YYROOOOOOOOO"
          }
+         if(minutes === 20){
+            return "YYRYOOOOOOOO"
+         }
 
     }
 
