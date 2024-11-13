@@ -64,7 +64,9 @@ export class Main {
         if(hour === 1){
             return "ROOO"
         }
-        
+        if(hour === 2){
+            return "RROO"
+        }
     }
 
 }
