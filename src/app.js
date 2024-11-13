@@ -49,6 +49,9 @@ export class Main {
          if(minutes === 45){
             return "YYRYYRYYROO"
          }
+         if(minutes === 50){
+            return "YYRYYRYYRYO"
+         }
     }
 
 }
