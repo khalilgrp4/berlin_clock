@@ -78,6 +78,13 @@ export class Main {
         }
 
     }
+    clock5Hour(hour){
+        if(hour === 5){
+            return "ROOO";
+         }
+      
+
+    }
 
 }
 function lastDigitMinFinishWith1or6(minutes) {
