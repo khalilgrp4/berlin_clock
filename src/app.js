@@ -14,18 +14,11 @@ export class Main {
             return "YYYO";
         }
 
-        if(minutes === 4){
+        if(lastDigitFinishWith4or9(minutes)){
             return "YYYY";
         }
         if(minutes === 5){
             return "OOOO"
-        }
-        
-        if(minutes === 8){
-            return "YYYO"
-        }
-        if(minutes === 9){
-            return "YYYY"
         }
         if(minutes === 10){
             return "OOOO"
@@ -50,4 +43,9 @@ function lastDigitFinishWith2or7(minutes) {
 function lastDigitFinishWith3or8(minutes) {
     let lastDigit = minutes % 10;
     return lastDigit === 3 || lastDigit === 8;
+}
+
+function lastDigitFinishWith4or9(minutes) {
+    let lastDigit = minutes % 10;
+    return lastDigit === 4 || lastDigit === 9;
 }
