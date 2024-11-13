@@ -17,10 +17,7 @@ export class Main {
         if(lastDigitFinishWith4or9(minutes)){
             return "YYYY";
         }
-        if(minutes === 5){
-            return "OOOO"
-        }
-        if(minutes === 10){
+        if(lastDigitFinishWith5or0(minutes)){
             return "OOOO"
         }
 
@@ -48,4 +45,9 @@ function lastDigitFinishWith3or8(minutes) {
 function lastDigitFinishWith4or9(minutes) {
     let lastDigit = minutes % 10;
     return lastDigit === 4 || lastDigit === 9;
+}
+
+function lastDigitFinishWith5or0(minutes) {
+    let lastDigit = minutes % 10;
+    return lastDigit === 5 || lastDigit === 0;
 }
