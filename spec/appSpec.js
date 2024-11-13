@@ -47,6 +47,12 @@ describe("A suite of test for the berlinClock function of the main class", funct
 
         expect(result).toBe("YYOO");
     });
+    it("ClockSingleMinute should return YYYO when given 8", function() {
+        
+        let result = main.ClockSingleMinute(8);
+
+        expect(result).toBe("YYYO");
+    });
     it("ClockSingleMinute should return YYYY when given 9", function() {
         
         let result = main.ClockSingleMinute(9);
