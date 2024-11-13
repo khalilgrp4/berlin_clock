@@ -20,10 +20,13 @@ export class Main {
         if(lastDigitFinishWith5or0(minutes)){
             return "OOOO"
         }
-
-    
     }
-    
+    Clock5Minutes(minutes){
+        if(minutes === 5){
+           return "YOOOOOOOOOOO"
+        }
+        
+    }
 
 }
 function lastDigitFinishWith1or6(minutes) {

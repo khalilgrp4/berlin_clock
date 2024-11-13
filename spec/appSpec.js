@@ -65,6 +65,12 @@ describe("A suite of test for the berlinClock function of the main class", funct
 
         expect(result).toBe("OOOO");
     });
+    it("Clock5Minute should return YOOOOOOOOOOO when given 5", function() {
+        
+        let result = main.Clock5Minutes(5);
+
+        expect(result).toBe("YOOOOOOOOOOO");
+    });
 
 
 });
