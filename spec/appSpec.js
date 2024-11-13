@@ -211,5 +211,10 @@ describe("A suite of test for the berlinClock function of the main class", funct
 
         expect(result).toBe("RRRO");
     });
+    it("clockSingleHour should return RRRR when given 20", function() {
+        let result = main.clock5Hour(20);
+
+        expect(result).toBe("RRRR");
+    });
 
 });
