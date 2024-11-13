@@ -25,7 +25,10 @@ export class Main {
         if(minutes === 5){
            return "YOOOOOOOOOOO"
         }
-        
+        if(minutes === 10){
+            return "YYOOOOOOOOOO"
+         }
+
     }
 
 }
