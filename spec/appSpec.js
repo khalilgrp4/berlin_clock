@@ -159,6 +159,12 @@ describe("A suite of test for the berlinClock function of the main class", funct
         let result = main.clockSingleHour(4);
 
         expect(result).toBe("RRRR");
+    });
+
+    it("clockSingleHour should return OOOO when given 5", function() {
+        let result = main.clockSingleHour(5);
+
+        expect(result).toBe("OOOO");
     })
 
 
