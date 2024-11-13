@@ -91,6 +91,9 @@ export class Main {
          if(hour === 20){
             return "RRRR";
          }
+         if(hour === 0){
+            return "OOOO";
+         }
       
 
     }
