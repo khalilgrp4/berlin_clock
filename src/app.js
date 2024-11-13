@@ -1,6 +1,7 @@
 export class Main {
     ClockSingleMinute(minutes){
-        if(minutes === 1 ){
+
+        if(lastNumberFinishWith1or6(minutes)){
             return "YOOO";
         }
 
@@ -18,9 +19,6 @@ export class Main {
         if(minutes === 5){
             return "OOOO"
         }
-        if(minutes === 6){
-            return "YOOO"
-        }
         if(minutes === 7){
             return "YYOO"
         }
@@ -36,5 +34,11 @@ export class Main {
 
     
     }
+    
 
+}
+function lastDigitFinishWith1or6(minutes) {
+        let lastDigit = minutes % 10;
+        return lastDigit === 1 || lastDigit === 6;
+            
 }
