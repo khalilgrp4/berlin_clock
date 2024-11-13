@@ -38,10 +38,13 @@ export class Main {
             return "YYRYYOOOOOO"
          }
          if(minutes === 30){
-            return "YYRYYYOOOOO"
+            return "YYRYYROOOOO"
          }
          if(minutes === 35){
-            return "YYRYYYYOOOO"
+            return "YYRYYRYOOOO"
+         }
+         if(minutes === 40){
+            return "YYRYYRYYOOO"
          }
     }
 
