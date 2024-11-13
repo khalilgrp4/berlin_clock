@@ -1,7 +1,5 @@
 export class Main {
-    ClockSingleMinute(minutes){
-        
-        
+    clockSingleMinute(minutes){
         if(lastDigitFinishWith1or6(minutes)){
             return "YOOO";
         }
@@ -21,43 +19,52 @@ export class Main {
             return "OOOO"
         }
     }
-    Clock5Minutes(minutes){
+    clock5Minutes(minutes){
         if(minutes === 5){
-           return "YOOOOOOOOOO"
+           return "YOOOOOOOOOO";
         }
         if(minutes === 10){
-            return "YYOOOOOOOOO"
+            return "YYOOOOOOOOO";
          }
          if(minutes === 15){
-            return "YYROOOOOOOO"
+            return "YYROOOOOOOO";
          }
          if(minutes === 20){
-            return "YYRYOOOOOOO"
+            return "YYRYOOOOOOO";
          }
          if(minutes === 25){
-            return "YYRYYOOOOOO"
+            return "YYRYYOOOOOO";
          }
          if(minutes === 30){
-            return "YYRYYROOOOO"
+            return "YYRYYROOOOO";
          }
          if(minutes === 35){
-            return "YYRYYRYOOOO"
+            return "YYRYYRYOOOO";
          }
          if(minutes === 40){
-            return "YYRYYRYYOOO"
+            return "YYRYYRYYOOO";
          }
          if(minutes === 45){
-            return "YYRYYRYYROO"
+            return "YYRYYRYYROO";
          }
          if(minutes === 50){
-            return "YYRYYRYYRYO"
+            return "YYRYYRYYRYO";
          }
          if(minutes === 55){
-            return "YYRYYRYYRYY"
+            return "YYRYYRYYRYY";
          }
          if(minutes === 60){
-            return "OOOOOOOOOOO"
+            return "OOOOOOOOOOO";
          }
+
+         
+    }
+
+    clockSingleHour(hour){
+        if(hour === 1){
+            return "ROOO"
+        }
+        
     }
 
 }
