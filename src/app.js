@@ -9,7 +9,8 @@ export class Main {
         if(lastDigitFinishWith2or7(minutes)){
             return "YYOO";
         }
-        if(minutes === 3){
+
+        if(lastDigitFinishWith3or8(minutes)){
             return "YYYO";
         }
 
@@ -44,4 +45,9 @@ function lastDigitFinishWith1or6(minutes) {
 function lastDigitFinishWith2or7(minutes) {
     let lastDigit = minutes % 10;
     return lastDigit === 2 || lastDigit === 7;
+}
+
+function lastDigitFinishWith3or8(minutes) {
+    let lastDigit = minutes % 10;
+    return lastDigit === 3 || lastDigit === 8;
 }
