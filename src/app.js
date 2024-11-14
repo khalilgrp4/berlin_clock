@@ -104,6 +104,9 @@ export class Main {
         if(second === 2){
             return "R";
         }
+        if(second === 3){
+            return "O"
+        }
     }
 
 
