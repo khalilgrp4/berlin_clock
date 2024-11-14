@@ -245,6 +245,18 @@ describe("A suite of test for the berlinClock function of the main class", funct
 
         expect(result).toBe("R");
     });
+
+    it("clockSecond should return O when given 5", function() {
+        let result = main.clockSecond(5);
+
+        expect(result).toBe("O");
+    });
+    
+    it("clockSecond should return R when given 6", function() {
+        let result = main.clockSecond(6);
+
+        expect(result).toBe("R");
+    });
     
 
 });
