@@ -116,6 +116,9 @@ export class Main {
         if(second === 6){
             return "R";
         }
+        if(second === 7){
+            return "O";
+        }
     }
 
 
