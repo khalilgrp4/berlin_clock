@@ -196,30 +196,38 @@ describe("A suite of test for the berlinClock function of the main class", funct
 
         expect(result).toBe("OOOO");
     });
-    it("clockSingleHour should return ROOO when given 5", function() {
+    it("clock5Hour should return ROOO when given 5", function() {
         let result = main.clock5Hour(5);
 
         expect(result).toBe("ROOO");
     });
-    it("clockSingleHour should return RROO when given 10", function() {
+    it("clock5Hour should return RROO when given 10", function() {
         let result = main.clock5Hour(10);
 
         expect(result).toBe("RROO");
     });
-    it("clockSingleHour should return RRRO when given 15", function() {
+    it("clock5Hour should return RRRO when given 15", function() {
         let result = main.clock5Hour(15);
 
         expect(result).toBe("RRRO");
     });
-    it("clockSingleHour should return RRRR when given 20", function() {
+    it("clock5Hour should return RRRR when given 20", function() {
         let result = main.clock5Hour(20);
 
         expect(result).toBe("RRRR");
     });
-    it("clockSingleHour should return OOOO when given 0", function() {
+    it("clock5Hour should return OOOO when given 0", function() {
         let result = main.clock5Hour(0);
 
         expect(result).toBe("OOOO");
     });
+
+    it("clockSecond should return O when given 1", function() {
+        let result = main.clockSecond(1);
+
+        expect(result).toBe("O");
+    });
+
+    
 
 });

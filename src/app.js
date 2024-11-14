@@ -95,10 +95,44 @@ export class Main {
             return "OOOO";
          }
       
-
     }
 
+    clockSecond(second){
+        if(second === 1){
+            return "O"
+        }
+    }
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function lastDigitMinFinishWith1or6(minutes) {
     let lastDigit = minutes % 10;
     return lastDigit === 1 || lastDigit === 6;
