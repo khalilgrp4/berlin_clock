@@ -270,5 +270,10 @@ describe("A suite of test for the berlinClock function of the main class", funct
         expect(result).toBe("R");
     });
     
+    it("clockSecond should return O when given 9", function() {
+        let result = main.clockSecond(9);
+
+        expect(result).toBe("O");
+    });
 
 });
