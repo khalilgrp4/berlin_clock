@@ -98,33 +98,10 @@ export class Main {
     }
 
     clockSecond(second){
-        if(second === 1){
-            return "O";
-        }
-        if(second === 2){
+        if(second%2 === 0){
             return "R";
         }
-        if(second === 3){
-            return "O";
-        }
-        if(second === 4){
-            return "R";
-        }
-        if(second === 5){
-            return "O";
-        }
-        if(second === 6){
-            return "R";
-        }
-        if(second === 7){
-            return "O";
-        }
-        if(second === 8){
-            return "R";
-        }
-        if(second === 9){
-            return "O";
-        }
+        return "O";
     }
 
 
