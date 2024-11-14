@@ -99,7 +99,10 @@ export class Main {
 
     clockSecond(second){
         if(second === 1){
-            return "O"
+            return "O";
+        }
+        if(second === 2){
+            return "R";
         }
     }
 
