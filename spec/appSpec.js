@@ -281,7 +281,7 @@ describe("A suite of test for the berlinClock function of the main class", funct
         expect(result).toBe("R");
     });
 
-    it("clockSecond should return R when given 10", function() {
+    it("belinClock should return the berlinClockDisplay when given 1731589430(timestamp) ", function() {
         let result = main.berlinClock(1731589430);
         console.log(result);
     });
