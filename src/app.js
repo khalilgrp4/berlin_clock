@@ -20,40 +20,40 @@ export class Main {
         }
     }
     clock5Minutes(minutes){
-        if(minutes === 5){
+        if(minutes >= 5 && minutes<10){
            return "YOOOOOOOOOO";
         }
-        if(minutes === 10){
+        if(minutes >= 10 && minutes < 15){
             return "YYOOOOOOOOO";
          }
-         if(minutes === 15){
+         if(minutes >= 15 && minutes < 20){
             return "YYROOOOOOOO";
          }
-         if(minutes === 20){
+         if(minutes >= 20 && minutes < 25){
             return "YYRYOOOOOOO";
          }
-         if(minutes === 25){
+         if(minutes >= 25 && minutes < 30){
             return "YYRYYOOOOOO";
          }
-         if(minutes === 30){
+         if(minutes >= 30 && minutes < 35){
             return "YYRYYROOOOO";
          }
-         if(minutes === 35){
+         if(minutes >= 35 && minutes < 40){
             return "YYRYYRYOOOO";
          }
-         if(minutes === 40){
+         if(minutes >= 40 && minutes < 45){
             return "YYRYYRYYOOO";
          }
-         if(minutes === 45){
+         if(minutes >= 45 && minutes < 50){
             return "YYRYYRYYROO";
          }
-         if(minutes === 50){
+         if(minutes >= 50 && minutes < 55){
             return "YYRYYRYYRYO";
          }
-         if(minutes === 55){
+         if(minutes >= 55 && minutes < 60){
             return "YYRYYRYYRYY";
          }
-         if(minutes === 60){
+         if(minutes === 0){
             return "OOOOOOOOOOO";
          }
 
@@ -79,16 +79,16 @@ export class Main {
 
     }
     clock5Hour(hour){
-        if(hour === 5){
+        if(hour >= 5 && hour < 10){
             return "ROOO";
          }
-         if(hour === 10){
+         if(hour >= 10 && hour < 15){
             return "RROO";
          }
-         if(hour === 15){
+         if(hour >= 15 && hour < 20){
             return "RRRO";
          }
-         if(hour === 20){
+         if(hour == 20){
             return "RRRR";
          }
          if(hour === 0){
@@ -104,11 +104,27 @@ export class Main {
         return "O";
     }
 
+    berlinClock(timestamp){
+        const date = new Date(timestamp * 1000);
+        const hour = date.getHours();
+        const minutes = date.getMinutes();
+        const seconds = date.getSeconds();
+        const secondsDisplay = this.clockSecond(seconds);
+        const fiveHourDisplay = this.clock5Hour(hour);
+        const singleHourDisplay = this.clockSingleHour(hour);
+        const fiveMinutesDisplay = this.clock5Minutes(minutes);
+        const singleMinuteDisplay = this.clockSingleMinute(minutes);
+        const berlinClockDisplay = `
+        ${secondsDisplay}
+        ${fiveHourDisplay}
+        ${singleHourDisplay}
+        ${fiveMinutesDisplay}
+        ${singleMinuteDisplay}`;
 
-
+        return berlinClockDisplay.trim();
+    }
 
 }
-
 
 
 

@@ -131,8 +131,8 @@ describe("A suite of test for the berlinClock function of the main class", funct
 
         expect(result).toBe("YYRYYRYYRYY");
     });
-    it("Clock5Minute should return OOOOOOOOOOO when given 60", function() {
-        let result = main.clock5Minutes(60);
+    it("Clock5Minute should return OOOOOOOOOOO when given 0", function() {
+        let result = main.clock5Minutes(0);
 
         expect(result).toBe("OOOOOOOOOOO");
     });
@@ -272,7 +272,6 @@ describe("A suite of test for the berlinClock function of the main class", funct
     
     it("clockSecond should return O when given 9", function() {
         let result = main.clockSecond(9);
-
         expect(result).toBe("O");
     });
 
@@ -281,5 +280,12 @@ describe("A suite of test for the berlinClock function of the main class", funct
 
         expect(result).toBe("R");
     });
+
+    it("clockSecond should return R when given 10", function() {
+        let result = main.berlinClock(1731589430);
+        console.log(result);
+    });
+
+
 
 });
